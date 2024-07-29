@@ -82,7 +82,7 @@ The Cheatsheet follows a consistent Format, take the `ls` command as an example,
 ```sh
 ls # list Files & Direcctories on this place
 ```
-For extra details visit [ls.md]()
+For extra details visit [ls.md](./basic-commands/ls.md)
 
 - ls.md
 Options include: 
