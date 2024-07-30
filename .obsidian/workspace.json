@@ -4,48 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "b810bd33cfa5fee1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "311612e497291488",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "basic-commands/ls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f6f6b10050511e8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "basic-commands/ls.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aac52aaa18e98d73",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "basic-commands/man.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "9778c6c4ae850682",
         "type": "tabs",
         "children": [
@@ -53,11 +11,28 @@
             "id": "b999d9a43df59b79",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8fca1ca8a2e92267",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -123,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "basic-commands/ls.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "basic-commands/ls.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,16 +138,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "basic-commands/ls.md"
+                "file": "README.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,16 +159,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "311612e497291488",
+  "active": "8fca1ca8a2e92267",
   "lastOpenFiles": [
+    "Lab 3 sol.md",
+    "advanced/pattern-matching.md",
+    "assets/obsidian.png",
+    "basic-commands/ls.md",
+    "user-management/useradd.md",
     "README.md",
-    "Untitled.md",
-    "Untitled",
+    "ignore.md",
+    "others/environment-variables.md",
+    "others/redirect-pipelines.md",
+    "others/pattern-matching.md",
+    "advanced",
+    "basic-commands/grep.md",
+    "basic-commands/cd.md",
+    "basic-commands/rm.md",
+    "basic-commands/cp.md",
+    "basic-commands/mv.md",
+    "basic-commands/head.md",
+    "basic-commands/tail.md",
+    "basic-commands/find.md",
+    "basic-commands/chmod.md",
+    "basic-commands/chown.md",
+    "basic-commands/wc.md",
+    "basic-commands/date.md",
+    "basic-commands/file.md",
+    "basic-commands/ln.md",
+    "todo.md",
+    "others",
+    "assets",
+    "basic-commands/man.md",
     "permissions",
     "user-management",
-    "basic-commands",
-    "basic-commands/man.md",
-    "basic-commands/ls.md",
-    "Lab 3 sol.md"
+    "basic-commands"
   ]
 }
