@@ -1,35 +1,28 @@
-#### `expansion.md`
+#### `pattern-matching.md`
 
-**Expansion** - Shell expansion enables the use of variables, wildcards, and other features in commands.
+**Pattern Matching** - File and directory name matching using patterns.
 
-- **Types of Expansion:**
-  - **Brace Expansion:** `{}` Generate arbitrary strings.
+- **Wildcards:**
+  - `*` : Matches any number of characters.
     ```sh
-    echo {A..E}  # outputs: A B C D E
+    ls *.jpg  # matches all .jpg files
     ```
   
-  - **Parameter Expansion:** `$` Used to expand variables.
+  - `?` : Matches a single character.
     ```sh
-    echo $USER  # outputs the current username
+    ls file?.txt  # matches file1.txt, file2.txt, etc.
+    ```
+  
+  - `[ ]` : Matches any one of the enclosed characters.
+    ```sh
+    ls file[12].txt  # matches file1.txt or file2.txt
     ```
 
-  - **Command Substitution:** `` ` ` `` or `$()` Executes commands and uses the result.
-    ```sh
-    echo "Today is $(date)"
-    ```
+- **Example:**
+  ```sh
+  ls *.log  # list all .log files in the directory
+  ```
 
-  - **Arithmetic Expansion:** `$(( ))` Perform arithmetic operations.
-    ```sh
-    echo $((5 + 3))  # outputs: 8
-    ```
-
-  - **Tilde Expansion:** `~` Expands to the home directory.
-    ```sh
-    cd ~  # changes to the home directory
-    ```
-
-  - **Pathname Expansion:** `*`, `?` Wildcards for matching filenames.
-    ```sh
-    ls *.txt  # lists all .txt files
-    ```
-
+- **Advanced Patterns:**
+  - **Bracket Expressions:** `[a-z]`, `[!abc]`, `[[:digit:]]`
+  - **Extended Globbing:** `?(pattern)`, `*(pattern)`, `+(pattern)`, `@(pattern)`, `!(pattern)`

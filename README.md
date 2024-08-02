@@ -1,15 +1,15 @@
-## List of Content
+h## List of Content
 - [List of Content](#list-of-content)
 - [Get started](#get-started)
-- [System Information](#system-information)
-- [File Compression and Archiving](#file-compression-and-archiving)
-- [Text Processing](#text-processing)
-- [Advanced Commands and Topics](#advanced-commands-and-topics)
+- [Basic Commands](#basic-commands)
+- [System Info](#system-info)
 - [User Management Commands](#user-management-commands)
-- 
+- [Other Important Commands and Topics](#other-important-commands-and-topics)
 - [Extra Tips \& Tricks](#extra-tips--tricks)
   - [Alias Command to a one of your own](#alias-command-to-a-one-of-your-own)
 - [Contribution](#contribution)
+- [Directory Structure](#directory-structure)
+
 ---
 ## Get started
 1. You can read this Cheatsheet from Github directly, or a better way is to clone this repo and open it with [Obsidian](https://obsidian.md/) with these Steps.
@@ -280,8 +280,8 @@ echo $STR  # Hello ...
 ---
 
 ## Other Important Commands and Topics
-0. **Linux File System** - How Directories in Linux are structured, watching this short [video](https://youtu.be/42iQKuQodW4?feature=shared) is highly recommended.
-	
+0. **Linux File System** - How Directories in Linux are structured, watching this short [video](https://youtu.be/42iQKuQodW4?feature=shared) is highly recommended. Anyways, more 
+	For extra details, visit [file-system.md](./others/file-system.md).
 1. **Expansion** - Shell expansion allows you to use variables, wildcards, and other features in commands.
     ```sh
     echo {1..5}  # generates a sequence: 1 2 3 4 5
@@ -347,6 +347,25 @@ Alias batata='touch'
 
 Common aliases include: `ls` to `dir`, `sudo` to `plz`
 **Explanation:** Since those Commands are executable binaries, you can can create a Command that aliases/points to an existing Command (which is `touch` in this case)
+### Tab Completion
+
+**Tab Completion** is a powerful feature that makes navigating the command line faster and more efficient by automatically completing partially typed commands or filenames. Here's how you can use it:
+
+- **Complete Commands:** Start typing a command and press the `Tab` key to auto-complete it. If there are multiple possibilities, pressing `Tab` twice will show a list of available commands.    
+    
+    ```sh
+    `ls Docu[TAB]    # Autocomplete 'Documents' if it exists`
+    ```
+### Multi-line Commands
+
+In Linux, you can write multi-line commands for better readability or when executing complex scripts. This is particularly useful in shell scripting or when entering commands with long arguments.
+
+- **Using Backslash (`\`)**: The backslash at the end of a line allows continuation on the next line.
+    
+```sh
+echo "This is a \ multi-line \ command."
+```
+
 ## Contribution
 The Cheatsheet follows a consistent Format, take the `ls` command as an example, You'll find a general use-case & explanation for the Command on this Page, but for extra details,  Options and Others, you'll find a seperate File for this Command if needed.
 **Example:**

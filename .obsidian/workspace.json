@@ -13,26 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "others/file-system.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8fca1ca8a2e92267",
+            "id": "70af26cc77fc05ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "basic-commands/man.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "others/file-system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "others/file-system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "others/file-system.md"
               }
             }
           }
@@ -159,18 +158,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8fca1ca8a2e92267",
+  "active": "b999d9a43df59b79",
   "lastOpenFiles": [
+    "README.md",
+    "others/file-system.md",
+    "basic-commands/ln.md",
+    "assets/ext4-system.png",
+    "assets/ext4-system.png.crdownload",
+    "basic-commands/man.md",
+    "others/expansion.md",
+    "others/history.md",
+    "ignore.md",
+    "others/pattern-matching.md",
+    "others/redirect-pipelines.md",
+    "others/environment-variables.md",
     "Lab 3 sol.md",
     "advanced/pattern-matching.md",
     "assets/obsidian.png",
     "basic-commands/ls.md",
     "user-management/useradd.md",
-    "README.md",
-    "ignore.md",
-    "others/environment-variables.md",
-    "others/redirect-pipelines.md",
-    "others/pattern-matching.md",
     "advanced",
     "basic-commands/grep.md",
     "basic-commands/cd.md",
@@ -184,12 +190,8 @@
     "basic-commands/chown.md",
     "basic-commands/wc.md",
     "basic-commands/date.md",
-    "basic-commands/file.md",
-    "basic-commands/ln.md",
-    "todo.md",
     "others",
     "assets",
-    "basic-commands/man.md",
     "permissions",
     "user-management",
     "basic-commands"
