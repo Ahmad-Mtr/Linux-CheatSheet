@@ -1,7 +1,7 @@
 
 # Linux Filesystem Directories
 here's a diagram showcasing EXT4 directories:
-![Linux EXT4 File system Diagram](https://raw.githubusercontent.com/Ahmad-Mtr/Linux-CheatSheet/assets/ext4-system.png)
+![Linux EXT4 File system Diagram](https://raw.githubusercontent.com/Ahmad-Mtr/Linux-CheatSheet/main/assets/ext4-system.png)
 
 
 | Directory   | Description                                                                                      | Common Contents                                                         |

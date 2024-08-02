@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "20c00c42531fe4f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "others/file-system.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "70af26cc77fc05ab",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "others/file-system.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "others/file-system.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "others/file-system.md"
               }
             }
           }
@@ -158,10 +171,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b999d9a43df59b79",
+  "active": "20c00c42531fe4f9",
   "lastOpenFiles": [
-    "others/file-system.md",
     "README.md",
+    "others/file-system.md",
     "basic-commands/ln.md",
     "assets/ext4-system.png",
     "assets/ext4-system.png.crdownload",
