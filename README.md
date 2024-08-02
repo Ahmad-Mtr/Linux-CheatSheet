@@ -12,6 +12,8 @@ h## List of Content
 
 ---
 ## Get started
+
+
 1. You can read this Cheatsheet from Github directly, or a better way is to clone this repo and open it with [Obsidian](https://obsidian.md/) with these Steps.
 	1.	
 	```sh
@@ -36,6 +38,13 @@ And Below is a list of common Linux commands with brief descriptions and example
 
 ---
 ## Basic Commands
+0. Commands that are entered at the shell prompt have three basic parts: `command options argument` example
+```sh
+ls -al myfolder
+```
+- **Command:** name of executable to run, `ls`.
+- **Options:** adjust the behavior of the command (normally starts with dashes like `-l`), `-al`.
+- **arguments:**: target of the command, `myfolder`. 
 
 ```sh
 # You can use comments like other langs by using the `#`
