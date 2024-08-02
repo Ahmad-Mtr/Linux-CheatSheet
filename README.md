@@ -289,21 +289,24 @@ echo $STR  # Hello ...
 ---
 
 ## Other Important Commands and Topics
-0. **Linux File System** - How Directories in Linux are structured, watching this short [video](https://youtu.be/42iQKuQodW4?feature=shared) is highly recommended. Anyways, more 
+###  Linux File System 
+How Directories in Linux are structured, watching this short [video](https://youtu.be/42iQKuQodW4?feature=shared) is highly recommended. Anyways, more 
 	For extra details, visit [file-system.md](./others/file-system.md).
-1. **Expansion** - Shell expansion allows you to use variables, wildcards, and other features in commands.
+### Expansion 
+Shell expansion allows you to use variables, wildcards, and other features in commands.
     ```sh
     echo {1..5}  # generates a sequence: 1 2 3 4 5
     ```
     For extra details, visit [expansion.md](./others/expansion.md).
 
-2. **Pattern Matching** - Matching file and directory names using patterns.
+### Pattern Matching
+Matching file and directory names using patterns.
     ```sh
     ls *.txt  # list all '.txt' files in the directory
     ```
     For extra details, visit [pattern-matching.md](./others/pattern-matching.md).
     
-3. **Quotes in Variables**
+### Quotes in Variables
 
   - Double quotes `"` allow variable resolution or referencing.
 
@@ -321,7 +324,8 @@ echo $STR  # Hello ...
   echo "$greeting" # Hello, $name!
   ```
 
-4. **Redirect & Pipelines** - Redirect input and output, and use pipelines to connect commands.
+### Redirect & Pipelines
+Redirect input and output, and use pipelines to connect commands.
     ```sh
     ls > files.txt  # redirect output of 'ls' to 'files.txt'
     ```
@@ -330,13 +334,15 @@ echo $STR  # Hello ...
     ```
     For extra details, visit [redirect-pipelines.md](./others/redirect-pipelines.md).
 
-5. **Environment Variables** - Variables that affect the way processes run on your system.
+### Environment Variables
+Variables that affect the way processes run on your system.
     ```sh
     echo $PATH  # display the current PATH environment variable
     ```
     For extra details, visit [environment-variables.md](./others/environment-variables.md).
 
-6. **`history`** - Display or manipulate the command history.
+### history
+Display or manipulate the command history.
     ```sh
     history  # show the command history
     ```

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "others/file-system.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/file-system.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "others/file-system.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "others/file-system.md"
+                "file": "README.md"
               }
             }
           }
@@ -160,8 +160,8 @@
   },
   "active": "b999d9a43df59b79",
   "lastOpenFiles": [
-    "README.md",
     "others/file-system.md",
+    "README.md",
     "basic-commands/ln.md",
     "assets/ext4-system.png",
     "assets/ext4-system.png.crdownload",
