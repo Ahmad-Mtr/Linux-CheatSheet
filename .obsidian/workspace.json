@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "69a9e3429974f0cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Labs/CE357 Lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7db92f30c53b8bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Labs/CE357 Lab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "70af26cc77fc05ab",
             "type": "leaf",
             "state": {
@@ -44,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "others/file-system.md",
+                "file": "Labs/CE357 Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "others/file-system.md",
+                "file": "Labs/CE357 Lab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "others/file-system.md"
+                "file": "Labs/CE357 Lab.md"
               }
             }
           }
@@ -171,21 +195,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "20c00c42531fe4f9",
+  "active": "b7db92f30c53b8bc",
   "lastOpenFiles": [
-    "README.md",
+    "Labs/Lab 7.md",
+    "Labs/Lab 7.pdf",
+    "Labs",
+    "New folder",
+    "Labs/CE357 Lab.md",
     "others/file-system.md",
+    "README.md",
+    "basic-commands/man.md",
     "basic-commands/ln.md",
     "assets/ext4-system.png",
     "assets/ext4-system.png.crdownload",
-    "basic-commands/man.md",
     "others/expansion.md",
     "others/history.md",
     "ignore.md",
     "others/pattern-matching.md",
     "others/redirect-pipelines.md",
     "others/environment-variables.md",
-    "Lab 3 sol.md",
+    "Labs/Lab 3 sol.md",
     "advanced/pattern-matching.md",
     "assets/obsidian.png",
     "basic-commands/ls.md",
@@ -200,9 +229,6 @@
     "basic-commands/tail.md",
     "basic-commands/find.md",
     "basic-commands/chmod.md",
-    "basic-commands/chown.md",
-    "basic-commands/wc.md",
-    "basic-commands/date.md",
     "others",
     "assets",
     "permissions",
