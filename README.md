@@ -201,9 +201,10 @@ echo $STR  # Hello ...
 
 ## System Info
 
-26. **`htop`** - Interactive process viewer.
+26. **`top`** - Interactive process viewer.
     ```sh
-    htop  # interactive system monitor with more features than 'top'
+    top
+    htop  # interactive system monitor with more features than 'top' (requires installation)
     ```
 
 27. **`ps`** - Report a snapshot of current processes.
@@ -244,7 +245,11 @@ echo $STR  # Hello ...
 ---
 
 ## User Management Commands
-
+0. **id** - to display an ID of a User, group.
+    ```sh
+    id
+    ```
+    For extra details, visit [id.md](./user-management/id.md).
 1. **`useradd`** - Create a new user account.
     ```sh
     useradd newuser  # create a user named 'newuser'
@@ -285,6 +290,7 @@ echo $STR  # Hello ...
     ```sh
     groups username  # display groups 'username' belongs to
     ```
+8.  For extra details, visit [other Commons.md](./user-management/common-others.md)
 
 ---
 
@@ -347,6 +353,8 @@ Display or manipulate the command history.
     history  # show the command history
     ```
     For extra details, visit [history.md](./others/history.md).
+### special file-permissions & `umask`
+For extra details, visit [Special File Permissions & umask.md](./others/file-permissions.md)
 
 ---
 ## Extra Tips & Tricks

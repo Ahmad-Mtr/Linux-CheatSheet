@@ -8,43 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b999d9a43df59b79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "user-management/groupdel.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "01391f38a9a50f87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "basic-commands/file.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "65e7dde610c8a672",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
-            "id": "29d5a29c800060c3",
+            "id": "7983f78980f7b81d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "basic-commands/chown.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -76,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "env",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "user-management/groupdel.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "user-management/groupdel.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "user-management/groupdel.md"
+                "file": "README.md"
               }
             }
           }
@@ -174,35 +158,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b999d9a43df59b79",
+  "active": "65e7dde610c8a672",
   "lastOpenFiles": [
+    "others/file-permissions.md",
     "README.md",
-    "user-management/passwd.md",
-    "user-management/groudadd.md",
-    "user-management/groupdel.md",
-    "user-management/usermod.md",
-    "user-management/userdel.md",
-    "system-info/kill.md",
-    "system-info/ps.md",
-    "system-info",
-    "basic-commands/file.md",
-    "basic-commands/date.md",
-    "basic-commands/wc.md",
-    "basic-commands/man.md",
-    "basic-commands/ln.md",
+    "todo.md",
     "basic-commands/chown.md",
+    "basic-commands/date.md",
+    "system-info/ps.md",
+    "user-management/userdel.md",
+    "user-management/groupdel.md",
+    "user-management/common-others.md",
+    "system-info/kill.md",
+    "user-management/groudadd.md",
+    "user-management/passwd.md",
+    "user-management/usermod.md",
+    "user-management/useradd.md",
+    "user-management/id.md",
+    "basic-commands/ln.md",
+    "basic-commands/wc.md",
+    "basic-commands/file.md",
+    "others/environment-variables.md",
+    "system-info",
+    "basic-commands/man.md",
     "basic-commands/chmod.md",
     "basic-commands/find.md",
     "basic-commands/grep.md",
     "basic-commands/tail.md",
     "basic-commands/head.md",
     "basic-commands/mv.md",
-    "basic-commands/cp.md",
-    "basic-commands/rm.md",
-    "basic-commands/cd.md",
-    "basic-commands/ls.md",
-    "others/file-system.md",
-    "Labs/CE357 Lab.md",
     "Labs/Lab 7.pdf",
     "Labs",
     "New folder",

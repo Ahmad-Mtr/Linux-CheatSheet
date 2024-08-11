@@ -131,7 +131,16 @@ The `date` command is used to display and set the system date and time in Linux.
   ```
 
   - Prints a message with the current date and time.
-
+- **Read this**
+```sh
+root@host ~]# **`date +%F`** ![1](https://rha.ole.redhat.com/rol/static/roc/Common_Content/images/1.svg)
+2022-03-10
+[root@host ~]# **`date -d "+30 days" +%F`** ![2](https://rha.ole.redhat.com/rol/static/roc/Common_Content/images/2.svg)
+2022-04-09
+[root@host ~]# **`chage -E $(date -d "+30 days" +%F) cloudadmin10`** ![3](https://rha.ole.redhat.com/rol/static/roc/Common_Content/images/3.svg)
+[root@host ~]# **`chage -l cloudadmin10 | grep "Account expires"`** ![4](https://rha.ole.redhat.com/rol/static/roc/Common_Content/images/4.svg)
+Account expires						: Apr 09, 2022
+```
 ## Summary
 
 The `date` command is a versatile tool for displaying and setting the system date and time in Linux. It supports a variety of formats and options to customize the output and can handle both absolute and relative date calculations. Understanding how to use `date` effectively can assist with time management and automation tasks.

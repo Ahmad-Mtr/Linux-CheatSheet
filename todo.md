@@ -1,3 +1,5 @@
-- [ ] Add detailed History Section
-- [ ] Add Permissions Section
-- [ ] Create File System Diagram (use lucidchart)
+- [x] Add detailed History Section
+- [x] Add Permissions Section
+- [x] Create File System Diagram (use lucidchart)
+- [ ] Date commands
+- [ ] `chage`
