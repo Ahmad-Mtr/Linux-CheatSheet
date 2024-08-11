@@ -1,5 +1,4 @@
-
-# Symbolic Links & Hard Links Cheatsheet
+# Symbolic Links & Hard Links
 
 In Linux, the `ln` command is used to create links between files. Links can be symbolic (soft) links or hard links, each with unique properties and use cases.
 

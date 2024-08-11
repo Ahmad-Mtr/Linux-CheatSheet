@@ -13,62 +13,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "user-management/groupdel.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "20c00c42531fe4f9",
+            "id": "01391f38a9a50f87",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "others/file-system.md",
+                "file": "basic-commands/file.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "69a9e3429974f0cf",
+            "id": "65e7dde610c8a672",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Labs/CE357 Lab.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "b7db92f30c53b8bc",
+            "id": "29d5a29c800060c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Labs/CE357 Lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "70af26cc77fc05ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "basic-commands/man.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,13 +113,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Labs/CE357 Lab.md",
+                "file": "user-management/groupdel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -151,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Labs/CE357 Lab.md",
+                "file": "user-management/groupdel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Labs/CE357 Lab.md"
+                "file": "user-management/groupdel.md"
               }
             }
           }
@@ -195,44 +174,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b7db92f30c53b8bc",
+  "active": "b999d9a43df59b79",
   "lastOpenFiles": [
-    "Labs/Lab 7.md",
+    "README.md",
+    "user-management/passwd.md",
+    "user-management/groudadd.md",
+    "user-management/groupdel.md",
+    "user-management/usermod.md",
+    "user-management/userdel.md",
+    "system-info/kill.md",
+    "system-info/ps.md",
+    "system-info",
+    "basic-commands/file.md",
+    "basic-commands/date.md",
+    "basic-commands/wc.md",
+    "basic-commands/man.md",
+    "basic-commands/ln.md",
+    "basic-commands/chown.md",
+    "basic-commands/chmod.md",
+    "basic-commands/find.md",
+    "basic-commands/grep.md",
+    "basic-commands/tail.md",
+    "basic-commands/head.md",
+    "basic-commands/mv.md",
+    "basic-commands/cp.md",
+    "basic-commands/rm.md",
+    "basic-commands/cd.md",
+    "basic-commands/ls.md",
+    "others/file-system.md",
+    "Labs/CE357 Lab.md",
     "Labs/Lab 7.pdf",
     "Labs",
     "New folder",
-    "Labs/CE357 Lab.md",
-    "others/file-system.md",
-    "README.md",
-    "basic-commands/man.md",
-    "basic-commands/ln.md",
     "assets/ext4-system.png",
     "assets/ext4-system.png.crdownload",
-    "others/expansion.md",
-    "others/history.md",
-    "ignore.md",
-    "others/pattern-matching.md",
-    "others/redirect-pipelines.md",
-    "others/environment-variables.md",
-    "Labs/Lab 3 sol.md",
-    "advanced/pattern-matching.md",
     "assets/obsidian.png",
-    "basic-commands/ls.md",
-    "user-management/useradd.md",
     "advanced",
-    "basic-commands/grep.md",
-    "basic-commands/cd.md",
-    "basic-commands/rm.md",
-    "basic-commands/cp.md",
-    "basic-commands/mv.md",
-    "basic-commands/head.md",
-    "basic-commands/tail.md",
-    "basic-commands/find.md",
-    "basic-commands/chmod.md",
     "others",
     "assets",
     "permissions",
-    "user-management",
-    "basic-commands"
+    "user-management"
   ]
 }
