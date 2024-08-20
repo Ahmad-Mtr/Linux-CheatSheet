@@ -293,7 +293,7 @@ echo $STR  # Hello ...
 8.  For extra details, visit [other Commons.md](./user-management/common-others.md)
 
 ---
-## Networks
+## CH.11 Networking
 
 | Command                  | Purpose                                                                             |
 | ------------------------ | ----------------------------------------------------------------------------------- |
@@ -323,6 +323,71 @@ echo $STR  # Hello ...
 | `nmcli dev dis <dev>`           | Disconnect the interface, which also deactivates the current connection. |
 | `nmcli con del <name>`          | Delete the specified connection and its configuration file.              |
 
+---
+##  CH.12 Software Packages
+
+| Command                                   | Explanation                                                                                   |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `rpm -qa`                                 | Lists all installed RPM packages on the system.                                               |
+| `rpm -qa \| grep X`                       | Searches for installed RPM packages that contain the string "X" in their name.                |
+| `rpm -qf <file_path>`                     | Identifies the RPM package that owns the specified file or file path.                         |
+| `rpm -q <package_name>`                   | Retrieves information about a specific installed package.                                     |
+| `rpm -qi <package_name>`                  | Displays detailed information about the specified installed package.                          |
+| `rpm -ql <package_name>`                  | Lists all files owned by the specified installed package.                                     |
+| `rpm -qc <package_name>`                  | Lists the configuration files owned by the specified installed package.                       |
+| `rpm -qd <package_name>`                  | Lists the documentation files owned by the specified installed package.                       |
+| `rpm -q --scripts <package_name>`         | Displays the pre- and post-installation and uninstallation scripts for the specified package. |
+| `rpm -qlp <package_file.rpm>`             | Lists all files owned by the specified RPM package file (not installed).                      |
+| `rpm -q <package_name>`                   | Retrieves information about a specific installed package.                                     |
+| `rpm -ivh <package_file.rpm>`             | Installs the specified RPM package file.                                                      |
+| `rpm2cpio <package_name>.rpm \| cpio -id` | Extract Package content to your *$home*  directory.                                           |
+#### Summary of DNF Commands
+
+| Command:                      | Task:                                                   |
+| :---------------------------- | :------------------------------------------------------ |
+| `dnf list [NAME-PATTERN]`     | List installed and available packages by name.          |
+| `dnf group list`              | List installed and available groups.                    |
+| `dnf search KEYWORD`          | Search for a package by keyword.                        |
+| `dnf info PACKAGENAME`        | Show details of a package.                              |
+| `dnf install PACKAGENAME`     | Install a package.                                      |
+| `dnf group install GROUPNAME` | Install a package group.                                |
+| `dnf update`                  | Update all packages.                                    |
+| `dnf remove PACKAGENAME`      | Remove a package.                                       |
+| `dnf history`                 | Display transaction history.                            |
+| `dnf repolist all`            | List all available repos and their statuses on systems. |
+
+---
+## CH.13 Manage File Systems
+
+| Command                                      | Explanation                                                                                                      |
+| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `df`                                         | Displays the available disk space and usage on the file system.                                                  |
+| `df -h`                                      | Displays the available disk space and usage in a human-readable format (e.g., GB, MB).                           |
+| `du`                                         | Estimates the file space usage for a directory or file.                                                          |
+| `lsblk`                                      | Lists information about all available block devices.                                                             |
+| `lsblk -fp`                                  | Lists information about all available block devices in a tree-like format.                                       |
+| `mount`                                      | Mounts a file system. Examples: `mount /dev/sda1 /mnt`, `mount -t ext4 /dev/sda1 /mnt`                           |
+| `umount`                                     | Unmounts a file system. Example: `umount /mnt`                                                                   |
+| `lsof`                                       | Lists open files and the processes that opened them.                                                             |
+| `locate`                                     | Searches for files by name.                                                                                      |
+| `locate -i <filename>`                       | Searches for files by name, ignoring case.                                                                       |
+| `locate -n 5 <filename>`                     | Limits the output to the first 5 matching files.                                                                 |
+| `find`                                       | Searches for files based on various criteria.                                                                    |
+| `find . -iname '*.txt'`                      | Finds all files with a .txt extension (case-insensitive).                                                        |
+| `find . -user <username>`                    | Finds all files owned by the specified user.                                                                     |
+| `find . -group <groupname>`                  | Finds all files owned by the specified group.                                                                    |
+| `find . -uid <uid>`                          | Finds all files owned by the specified user ID.                                                                  |
+| `find . -gid <gid>`                          | Finds all files owned by the specified group ID.                                                                 |
+| `find / -perm /644 ` or  `find . -perm -644` | Finds all files with at least 644 permissions.                                                                   |
+| `find . -ls`                                 | Finds all files and displays detailed information about them.                                                    |
+| `find . -size +1G`                           | Finds all files larger than 1 GB.                                                                                |
+| `find . -size -100M`                         | Finds all files smaller than 100 MB.                                                                             |
+| `find . -size +100M -size -1G`               | Finds all files between 100 MB and 1 GB.                                                                         |
+| `find / -mmin 120`                           | find Files that changed 120 minutes ago.                                                                         |
+| `find / -mmin +120`                          | find Files that changed **more** than 120 minutes ago.                                                           |
+| `find / -mmin -120`                          | find Files that changed **less** than 120 minutes ago.                                                           |
+| `find . -type f`                             | Finds all **regular** files. use `d` for  **directories**,  `l` for **softlinks**, and `b` for **block-devices** |
+| `find . -type d`                             | Finds all directories.                                                                                           |
 
 ---
 
