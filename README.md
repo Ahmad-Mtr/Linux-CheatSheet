@@ -1,4 +1,4 @@
-h## List of Content
+## List of Content
 - [List of Content](#list-of-content)
 - [Get started](#get-started)
 - [Basic Commands](#basic-commands)
@@ -44,7 +44,7 @@ ls -al myfolder
 ```
 - **Command:** name of executable to run, `ls`.
 - **Options:** adjust the behavior of the command (normally starts with dashes like `-l`), `-al`.
-- **arguments:**: target of the command, `myfolder`. 
+- **arguments:** target of the command, `myfolder`. 
 
 ```sh
 # You can use comments like other langs by using the `#`
@@ -291,6 +291,38 @@ echo $STR  # Hello ...
     groups username  # display groups 'username' belongs to
     ```
 8.  For extra details, visit [other Commons.md](./user-management/common-others.md)
+
+---
+## Networks
+
+| Command                  | Purpose                                                                             |
+| ------------------------ | ----------------------------------------------------------------------------------- |
+| `ip addr show`           | Display detailed information about all network interfaces and their IP addresses.   |
+| `ping <host>`            | Send ICMP echo requests to a host to test connectivity and measure round-trip time. |
+| `ping6 <host>`           | Send ICMPv6 echo requests to a host for testing IPv6 connectivity.                  |
+| `ping -c <count> <host>` | Send a specified number of ICMP echo requests to a host.                            |
+| `ip -br addr show`       | Show brief information about all network interfaces and their IP addresses.         |
+| `ip link show`           | Display details about network interfaces, including their state and MAC addresses.  |
+| `ip route`               | Show the routing table for IPv4.                                                    |
+| `ip -6 route`            | Show the routing table for IPv6.                                                    |
+| `tracepath <host>`       | Trace the network path to a destination, showing each hop with RTT.                 |
+| `traceroute <host>`      | Trace the route packets take to a destination, showing each hop and delay.          |
+| `ss`                     | Display active sockets and their connections, similar to `netstat`.                 |
+
+### Useful NetworkManager Commands
+
+| Command                         | Purpose                                                                  |
+| :------------------------------ | :----------------------------------------------------------------------- |
+| `nmcli dev status`              | Show the NetworkManager status of all network interfaces.                |
+| `nmcli con show`                | List all connections.                                                    |
+| `nmcli con show <name>`         | List the current settings for the connection name.                       |
+| `nmcli con add con-name <name>` | Add and name a new connection profile.                                   |
+| `nmcli con mod <name>`          | Modify the connection name.                                              |
+| `nmcli con reload`              | Reload the configuration files, after manual file editing.               |
+| `nmcli con up <name>`           | Activate the connection name.                                            |
+| `nmcli dev dis <dev>`           | Disconnect the interface, which also deactivates the current connection. |
+| `nmcli con del <name>`          | Delete the specified connection and its configuration file.              |
+
 
 ---
 

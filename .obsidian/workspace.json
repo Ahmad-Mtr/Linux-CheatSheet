@@ -160,9 +160,9 @@
   },
   "active": "65e7dde610c8a672",
   "lastOpenFiles": [
-    "others/file-permissions.md",
-    "README.md",
     "todo.md",
+    "README.md",
+    "others/file-permissions.md",
     "basic-commands/chown.md",
     "basic-commands/date.md",
     "system-info/ps.md",
