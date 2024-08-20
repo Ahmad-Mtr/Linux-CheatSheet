@@ -160,8 +160,9 @@
   },
   "active": "65e7dde610c8a672",
   "lastOpenFiles": [
-    "todo.md",
+    "tree.md",
     "README.md",
+    "todo.md",
     "others/file-permissions.md",
     "basic-commands/chown.md",
     "basic-commands/date.md",
@@ -186,7 +187,6 @@
     "basic-commands/grep.md",
     "basic-commands/tail.md",
     "basic-commands/head.md",
-    "basic-commands/mv.md",
     "Labs/Lab 7.pdf",
     "Labs",
     "New folder",

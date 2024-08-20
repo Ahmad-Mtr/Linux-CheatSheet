@@ -1,12 +1,58 @@
+- [List of Content](#list-of-content)
+- [Get started](#get-started)
+- [Basic Commands](#basic-commands)
+- [System Info](#system-info)
+- [User Management Commands](#user-management-commands)
+- [CH.08 Processes](#ch08-processes)
+- [CH.09 Services \& Daemons](#ch09-services--daemons)
+- [CH.10 SSH](#ch10-ssh)
+- [CH.11 Networking](#ch11-networking)
+  - [Useful NetworkManager Commands](#useful-networkmanager-commands)
+- [CH.12 Software Packages](#ch12-software-packages)
+    - [Summary of DNF Commands](#summary-of-dnf-commands)
+- [CH.13 Manage File Systems](#ch13-manage-file-systems)
+- [Other Important Commands and Topics](#other-important-commands-and-topics)
+  - [Linux File System](#linux-file-system)
+  - [Expansion](#expansion)
+  - [Pattern Matching](#pattern-matching)
+  - [Quotes in Variables](#quotes-in-variables)
+  - [Redirect \& Pipelines](#redirect--pipelines)
+  - [Environment Variables](#environment-variables)
+  - [history](#history)
+  - [special file-permissions \& `umask`](#special-file-permissions--umask)
+- [Extra Tips \& Tricks](#extra-tips--tricks)
+  - [Alias Command to a one of your own](#alias-command-to-a-one-of-your-own)
+  - [Tab Completion](#tab-completion)
+  - [Multi-line Commands](#multi-line-commands)
+- [Contribution](#contribution)
+- [Directory Structure](#directory-structure)
 ## List of Content
 - [List of Content](#list-of-content)
 - [Get started](#get-started)
 - [Basic Commands](#basic-commands)
 - [System Info](#system-info)
 - [User Management Commands](#user-management-commands)
+- [CH.08 Processes](#ch08-processes)
+- [CH.09 Services \& Daemons](#ch09-services--daemons)
+- [CH.10 SSH](#ch10-ssh)
+- [CH.11 Networking](#ch11-networking)
+  - [Useful NetworkManager Commands](#useful-networkmanager-commands)
+- [CH.12 Software Packages](#ch12-software-packages)
+    - [Summary of DNF Commands](#summary-of-dnf-commands)
+- [CH.13 Manage File Systems](#ch13-manage-file-systems)
 - [Other Important Commands and Topics](#other-important-commands-and-topics)
+  - [Linux File System](#linux-file-system)
+  - [Expansion](#expansion)
+  - [Pattern Matching](#pattern-matching)
+  - [Quotes in Variables](#quotes-in-variables)
+  - [Redirect \& Pipelines](#redirect--pipelines)
+  - [Environment Variables](#environment-variables)
+  - [history](#history)
+  - [special file-permissions \& `umask`](#special-file-permissions--umask)
 - [Extra Tips \& Tricks](#extra-tips--tricks)
   - [Alias Command to a one of your own](#alias-command-to-a-one-of-your-own)
+  - [Tab Completion](#tab-completion)
+  - [Multi-line Commands](#multi-line-commands)
 - [Contribution](#contribution)
 - [Directory Structure](#directory-structure)
 
@@ -293,6 +339,88 @@ echo $STR  # Hello ...
 8.  For extra details, visit [other Commons.md](./user-management/common-others.md)
 
 ---
+## CH.08 Processes
+
+| Command                | Explanation                                                                                                                                                                       |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ps`                   | Displays information about the currently running processes.                                                                                                                       |
+| `ps aux`               | Displays a detailed list of all running processes, including those owned by other users.                                                                                          |
+| `top`                  | Displays a dynamic real-time view of the running processes. You can sort the processes by various metrics (e.g., CPU usage, memory usage) by pressing the corresponding sort key. |
+| `tail -f`              | Continuously displays the last few lines of a file as new data is added to it, useful for monitoring log files.                                                                   |
+| `jobs`                 | Lists the jobs currently running in the background.                                                                                                                               |
+| `fg %<job_number>`     | Brings a background job to the foreground. For example, `fg 1` would bring the first background job to the foreground.                                                            |
+| `Ctrl+C`               | Terminates the currently running process.                                                                                                                                         |
+| `Ctrl+Z`               | Suspends the currently running process and puts it in the background.                                                                                                             |
+| `lscpu -p`             | Displays CPU information in a CSV (comma-separated value) format, which can be useful for scripting.                                                                              |
+| `kill <pid>`           | Terminates the process with the specified process ID (PID). Examples: `kill 1234`, `kill -9 1234` (force kill).                                                                   |
+| `pkill <process_name>` | Terminates all processes with the specified name. Examples: `pkill firefox`, `pkill -u username`.                                                                                 |
+
+Here are some additional details:
+
+`top`:
+- Press `M` to sort by memory usage, `P` to sort by CPU usage, `N` to sort by PID, etc.
+- Press `k` to kill a process, `r` to renice (change priority of) a process.
+
+`kill`:
+- `kill -l` lists all available signal names that can be sent to a process.
+- `kill -9 <pid>` sends the SIGKILL signal, which is a "hard" kill and cannot be ignored by the process.
+- `kill -15 <pid>` sends the SIGTERM signal, which is a "soft" kill and allows the process to clean up and exit gracefully.
+
+`pkill`:
+- `pkill firefox` kills all processes named "firefox".
+- `pkill -u username` kills all processes owned by the specified user.
+- `pkill -signal name` sends the specified signal to matching processes.
+---
+## CH.09 Services & Daemons
+Here's the markdown table with the requested commands related to services and daemons:
+
+| Command                                                | Explanation                                                          |
+| ------------------------------------------------------ | -------------------------------------------------------------------- |
+| `systemctl`                                            | The central management tool for controlling the systemd init system. |
+| `systemctl list-units --type=service`                  | Lists all installed service units on the system.                     |
+| `systemctl list-units --type=path`                     | Lists all path units (both active and inactive).                     |
+| `systemctl list-units --type=service \| grep -i login` | Lists all service units related to the login process.                |
+| `systemctl status systemd-logind.service`              | Displays the status of the systemd-logind service.                   |
+| `systemctl disable <service_name>`                     | Configures a service not to start at system boot.                    |
+| `systemctl stop <service_name>`                        | Stops a running service.                                             |
+| `systemctl status <service_name>`                      | Verifies if the service has stopped.                                 |
+| `systemctl list-dependencies <service_name>`           | Lists the dependencies of a given service.                           |
+| `systemctl mask <service_name>`                        | Masks a service, preventing it from being started.                   |
+| `systemctl status <masked_service>`                    | Checks the status of a masked service.                               |
+
+Additional details:
+
+- `systemctl list-units --type=service`: This command lists all installed service units on the system, providing information such as the unit name, load state, active state, and unit file state.
+
+- `systemctl disable <service_name>`: This command configures the specified service not to start automatically at system boot. The service can still be started manually using `systemctl start <service_name>`.
+
+- `systemctl stop <service_name>` and `systemctl status <service_name>`: These commands stop a running service and verify if the service has indeed stopped, respectively.
+
+- `systemctl list-dependencies <service_name>`: This command displays the dependencies of the specified service, which can be useful for understanding the service's relationships with other system components.
+
+- `systemctl mask <service_name>`: This command masks the specified service, which means that the service cannot be started, restarted, or stopped. The service is effectively disabled and hidden from the system.
+
+---
+## CH.10 SSH
+
+| Command                       | Explanation                                                                   |
+| ----------------------------- | ----------------------------------------------------------------------------- |
+| `ssh Admin_A@servera`         | Connect to the server "servera" using the "Admin_A" user account.             |
+| `ssh-keygen`                  | Generate a new RSA SSH key pair When prompted, enter the wanted passphrase.   |
+| `ssh-copy-id Admin_A@servera` | Copy the generated public key to the "servera" server for the "Admin_A" user. |
+| `eval "$(ssh-agent -s)"`      | Start the ssh-agent program manually.                                         |
+| `ssh-add ~/.ssh/key-pass`     | Add the private key from the `~/.ssh/key-pass` file to the ssh-agent.         |
+| `systemctl reload sshd`       | Reload the SSH daemon to apply the configuration changes.                     |
+
+This table covers the steps you requested:
+1. Connect to "servera" via SSH using the "Admin_A" user account.
+2. Generate a new SSH key pair with the "ReDHat" passphrase.
+3. Copy the public key to the "servera" server for the "Admin_A" user.
+4. Start the ssh-agent program manually.
+5. Add the private key from the `~/.ssh/key-pass` file to the ssh-agent.
+6. Reload the SSH daemon to apply the configuration changes.
+
+---
 ## CH.11 Networking
 
 | Command                  | Purpose                                                                             |
@@ -508,5 +636,14 @@ ls -h /
 ## Directory Structure
 using `tree` command btw.
 ```
-
+├───.obsidian
+│   └───themes
+│       └───Catppuccin
+├───assets
+├───basic-commands
+├───Labs
+├───others
+├───permissions
+├───system-info
+└───user-management
 ```
